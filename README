@@ -1,14 +1,23 @@
- AUTHOR: Bryant Hankins 
- 
- URL: http://bryanthankins.com/techblog
- 
- COMMENTS: 
- This is a quickie (functional, but incomplete) port of the RubyGem cheats. 
- It allows you to easily get a a cheat sheet for a technology.
- I ported it to make it easier for windows users who don't have ruby.
- See http://cheat.errtheblog.com for more details about the original vision.
- 
- USAGE:
- 1) Get the code from git@github.com:bryanthankins/CheatSharp.git
- 2) Compile
- 3) Run cheat.exe from the command line and pass it the name of a cheatsheet like "cheat vimdiff" or "cheat sheets" to see all the sheets
+  AUTHOR: Bryant Hankins 
+  URL: http://bryanthankins.com/techblog
+  
+  COMMENTS: 
+  This is a quickie (functional, but incomplete) port of the RubyGem cheats. 
+  It allows you to easily get a a cheat sheet for a technology.
+  I ported it to make it easier for windows users who don't have ruby.
+  See http://cheat.errtheblog.com for more details about the original vision.
+  I also added support for asp.net sheets using a diff server repository.
+  If you have a cheat sheet that you'd like added just email me:
+  bryanthankins [at] gmail.com
+  
+  USAGE: 1) Compile the exe and place in c:\windows
+         2) Run through cmd prompt, vim or VS.NET (using external tools)
+               cheat -r sheets: list ruby cheat sheets
+               cheat -r <sheet name>: ruby cheat sheet system
+               cheat sheets: to see all asp.net cheat sheets
+               cheat <sheet name>: asp.net cheat systems
+               
+  ISSUES: 
+  If it's not working, make sure you have the app.config (or cheat.exe.config) 
+  deployed with the app. This allows it to get through a proxy
+  
